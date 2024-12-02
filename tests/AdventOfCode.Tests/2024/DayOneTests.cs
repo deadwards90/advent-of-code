@@ -1,4 +1,4 @@
-using AdventOfCode.Challenges._2024;
+using AdventOfCode.Challenges._2024.Day1;
 using AdventOfCode.Common.Challenge;
 using FluentAssertions;
 
@@ -6,15 +6,14 @@ namespace AdventOfCode.Tests._2024;
 
 public class DayOneTests : ChallengeTestBase<DayOneChallenge>
 {
-
-    public const string Example = """
-                                  3   4
-                                  4   3
-                                  2   5
-                                  1   3
-                                  3   9
-                                  3   3
-                                  """;
+    private const string Example = """
+                                   3   4
+                                   4   3
+                                   2   5
+                                   1   3
+                                   3   9
+                                   3   3
+                                   """;
 
     [Fact]
     public async Task PartOneExampleTest()

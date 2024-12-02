@@ -1,6 +1,6 @@
 using AdventOfCode.Common.Challenge;
 
-namespace AdventOfCode.Challenges._2024;
+namespace AdventOfCode.Challenges._2024.Day1;
 
 public class DayOneChallenge : ChallengeBase
 {
