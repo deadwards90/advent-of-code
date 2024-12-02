@@ -1,5 +1,9 @@
-﻿namespace AdventOfCode.Common.Challenge;
+﻿
+using JetBrains.Annotations;
 
+namespace AdventOfCode.Common.Challenge;
+
+[UsedImplicitly(ImplicitUseTargetFlags.Itself | ImplicitUseTargetFlags.WithInheritors)]
 public abstract class ChallengeBase : IChallenge
 {
     public int Year { get; }
