@@ -41,10 +41,10 @@ public abstract class ChallengeBase : IChallenge
 
         return lines;
     }
-    
+
     public override string ToString() => $"{Year} Day {Day}";
-    
+
     private string GetChallengePartPath() => Path.Combine(Year.ToString(), $"Day{Day}", $"Input.txt");
-    
+
     public Stream InputStream => File.OpenRead(GetChallengePartPath());
 }

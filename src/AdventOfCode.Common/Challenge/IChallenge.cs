@@ -7,6 +7,6 @@ public interface IChallenge
 
     public Task<ChallengeResult> PartOne(Stream input);
     public Task<ChallengeResult> PartTwo(Stream input);
-    
+
     public Stream InputStream { get; }
 }

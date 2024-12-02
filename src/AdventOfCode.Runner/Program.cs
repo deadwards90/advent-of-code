@@ -1,4 +1,4 @@
-﻿using AdventOfCode.Challenges._2023.Day1;
+﻿using AdventOfCode.Challenges;
 using AdventOfCode.Common.Challenge;
 using AdventOfCode.Runner;
 using Cocona;
@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 var builder = CoconaApp.CreateBuilder();
 
 builder.Services.Scan(scan =>
-    scan.FromAssemblyOf<Day1Challenge>()
+    scan.FromAssemblyOf<Challenges>()
         .AddClasses(classes => classes.AssignableTo<IChallenge>())
         .AsImplementedInterfaces()
         .WithTransientLifetime());
