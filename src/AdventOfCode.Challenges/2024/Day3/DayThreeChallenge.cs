@@ -48,7 +48,10 @@ public partial class DayThreeChallenge : ChallengeBase
             }
 
             var codeBlock = code[..index];
-            if (multiplying) result += MultiplyUsingRegex(codeBlock);
+            if (multiplying)
+            {
+                result += MultiplyUsingRegex(codeBlock);
+            }
 
             code = code[index..];
             multiplying = !multiplying;
